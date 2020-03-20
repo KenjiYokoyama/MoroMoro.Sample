@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "baseUrl": "src",
+        "jsx": "react",
+        "moduleResolution": "node",
+        "noEmitOnError": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": false, // Resolving with an underscore when a parameter cannot be removed, may leave the one when the parameter is used again.
+        "removeComments": true,
+        "resolveJsonModule": true,
+        "strict": true,
+        /* Applied only to client scripts. */
+        "module": "CommonJS",
+        "target": "es5",
+        "sourceMap": true
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}

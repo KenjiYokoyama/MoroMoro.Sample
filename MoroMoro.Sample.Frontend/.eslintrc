@@ -1,0 +1,192 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/eslint-recommended"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "max-len": [
+            "off",
+            80
+        ],
+        "max-lines": [
+            "warn",
+            300
+        ],
+        "max-statements": [
+            "warn",
+            30
+        ],
+        "max-params": [
+            "warn",
+            5
+        ],
+        "max-depth": [
+            "warn",
+            4
+        ],
+        "max-nested-callbacks": [
+            "warn",
+            {
+                "max": 5
+            }
+        ],
+        "require-jsdoc": [
+            "warn",
+            {
+                "require": {
+                    "FunctionDeclaration": true,
+                    "MethodDefinition": true,
+                    "ClassDeclaration": true,
+                    "ArrowFunctionExpression": false,
+                    "FunctionExpression": false
+                }
+            }
+        ],
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "quotes": [
+            "error",
+            "double",
+            {
+                "avoidEscape": true
+            }
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "no-multiple-empty-lines": [
+            "error",
+            {
+                "max": 2,
+                "maxBOF": 0,
+                "maxEOF": 0 // It allows one empty line.
+            }
+        ],
+        "brace-style": [
+            "error",
+            "1tbs",
+            {
+                "allowSingleLine": false
+            }
+        ],
+        "max-statements-per-line": [
+            "error",
+            {
+                "max": 1
+            }
+        ],
+        "one-var": [
+            "error",
+            "never"
+        ],
+        "one-var-declaration-per-line": [
+            "error",
+            "always"
+        ],
+        "comma-style": [
+            "error",
+            "last"
+        ],
+        "dot-location": [
+            "error",
+            "property"
+        ],
+        "no-useless-computed-key": [
+            "error",
+            {
+                "enforceForClassMembers": true
+            }
+        ],
+        "object-property-newline": [
+            "error",
+            {
+                "allowAllPropertiesOnSameLine": true
+            }
+        ],
+        "padded-blocks": [
+            "error",
+            "never"
+        ],
+        "wrap-iife": [
+            "error",
+            "inside"
+        ],
+        "camelcase": "error",
+        "no-unused-vars": "off",
+        "yoda": "error",
+        "curly": "error",
+        "arrow-spacing": "error",
+        "arrow-parens": [
+            "error",
+            "as-needed",
+            {
+                "requireForBlockBody": true
+            }
+        ],
+        "prefer-arrow-callback": "error",
+        "object-curly-spacing": [
+            "error",
+            "always"
+        ],
+        "rest-spread-spacing": [
+            "error",
+            "never"
+        ],
+        "template-curly-spacing": "error",
+        "block-spacing": "error",
+        "array-bracket-spacing": "error",
+        "semi-spacing": "error",
+        "space-before-blocks": "error",
+        "space-in-parens": "error",
+        "key-spacing": "error",
+        "keyword-spacing": "error",
+        "space-infix-ops": "error",
+        "comma-spacing": "error",
+        "func-call-spacing": "error",
+        "space-unary-ops": "error",
+        "spaced-comment": "error",
+        "use-isnan": "error",
+        "new-parens": "error",
+        "constructor-super": "off", // It is not needed, because VSCode already has the checker.
+        "no-fallthrough": "error",
+        "no-iterator": "error",
+        "no-new-wrappers": "error",
+        "no-path-concat": "error",
+        "no-self-compare": "error",
+        "no-throw-literal": "error",
+        "no-undef-init": "error",
+        "no-unreachable": "error",
+        "no-unsafe-finally": "error",
+        "no-unsafe-negation": "error",
+        "no-useless-call": "error",
+        "no-whitespace-before-property": "error",
+        "eqeqeq": "error"
+    }
+}
