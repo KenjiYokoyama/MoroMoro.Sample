@@ -1,0 +1,36 @@
+// For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.101.1/containers/javascript-node-12
+{
+    "name": "Node.js 12",
+    "dockerFile": "Dockerfile",
+    // Set *default* container specific settings.json values on container create.
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+    },
+    // Add the IDs of extensions you want installed when the container is created.
+    "extensions": [
+        "editorconfig.editorconfig",
+        "mhutchie.git-graph",
+        "eamodio.gitlens",
+        "sysoev.language-stylus",
+        "msjsdiag.debugger-for-chrome",
+        "msjsdiag.debugger-for-edge",
+        "dbaeumer.vscode-eslint",
+        "haaleo.vscode-stylint",
+        "thisismanta.stylus-supremacy",
+        "firsttris.vscode-jest-runner",
+    ],
+    // Use 'forwardPorts' to make a list of ports inside the container available locally.
+    "forwardPorts": [
+        3000, // Main server
+        8080, // HMR server
+    ],
+    "mounts": [
+        // Use the Docker CLI from inside the container. See https://aka.ms/vscode-remote/samples/docker-in-docker.
+        "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind",
+        // https://code.visualstudio.com/docs/remote/containers-advanced#_use-a-targeted-named-volume
+        "source=MoroMoro.Sample.Frontend-node_modules,target=/workspaces/MoroMoro.Sample/MoroMoro.Sample.Frontend/node_modules,type=volume",
+    ],
+    // Use 'postCreateCommand' to run commands after the container is created.
+    "postCreateCommand": "npm install",
+}

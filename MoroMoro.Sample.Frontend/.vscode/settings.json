@@ -1,0 +1,18 @@
+{
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "[stylus]": {
+        "editor.formatOnType": false
+    },
+    "files.associations": {
+        "*.stylintrc": "jsonc"
+    },
+    "eslint.format.enable": true,
+    "jestrunner.debugOptions": {
+        "skipFiles": [
+            "<node_internals>/**/*.js",
+            "node_modules/"
+        ]
+    }
+}
