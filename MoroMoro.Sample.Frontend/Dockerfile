@@ -3,10 +3,13 @@ WORKDIR /app
 COPY ["package.json", "package-lock.json", "tsconfig.json", "./"]
 RUN npm install --production --silent
 
-FROM base AS build
+FROM base AS dev
 WORKDIR /app
 RUN npm install --silent
 COPY . .
+
+FROM dev AS build
+WORKDIR /app
 RUN npm run build
 
 FROM base AS product

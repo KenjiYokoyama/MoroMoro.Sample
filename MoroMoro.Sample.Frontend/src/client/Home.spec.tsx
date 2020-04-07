@@ -7,7 +7,7 @@ import Home from "./Home";
 afterEach(cleanup);
 afterEach(jest.clearAllMocks);
 
-describe("HomeWork", () => {
+describe("Home", () => {
     it("メッセージが表示されること", () => {
         const app = render(<Home />);
         const heading = app.getByRole("heading");
