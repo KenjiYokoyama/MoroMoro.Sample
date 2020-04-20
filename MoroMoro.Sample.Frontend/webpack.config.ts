@@ -19,7 +19,8 @@ const config: webpack.Configuration = {
         extensions: [".js", ".ts", ".tsx", ".styl"],
         modules: [
             path.resolve(__dirname, "src/client"),
-            path.resolve(__dirname, "node_modules")
+            path.resolve(__dirname, "node_modules"),
+            "node_modules"
         ],
         alias: {
             "react-dom": "@hot-loader/react-dom",
