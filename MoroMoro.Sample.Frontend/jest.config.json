@@ -1,6 +1,12 @@
 {
     "preset": "ts-jest",
+    "modulePaths": [
+        "src"
+    ],
     "moduleNameMapper": {
         "\\.(css|styl)$": "<rootDir>/node_modules/jest-css-modules"
-    }
+    },
+    "coveragePathIgnorePatterns": [
+        "/node_modules/"
+    ]
 }

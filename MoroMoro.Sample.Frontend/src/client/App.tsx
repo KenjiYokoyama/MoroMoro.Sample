@@ -1,7 +1,6 @@
 import * as React from "react";
 import { Switch, Route, Link } from "react-router-dom";
 
-import "./favicon.ico";
 import * as styles from "./App.styl";
 import Home from "./Home";
 import HomeWork from "./HomeWork";

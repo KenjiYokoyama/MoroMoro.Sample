@@ -4,10 +4,10 @@ import { render, cleanup, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
 
 const homeMock = jest.fn(() => <></>);
-jest.mock("./Home", () => ({ __esModule: true, default: homeMock }));
+jest.mock("./Home", () => ({ __esModule: true, default: homeMock } as any));
 
 const homeworkMock = jest.fn(() => <></>);
-jest.mock("./HomeWork", () => ({ __esModule: true, default: homeworkMock }));
+jest.mock("./HomeWork", () => ({ __esModule: true, default: homeworkMock } as any));
 
 import App from "./App";
 

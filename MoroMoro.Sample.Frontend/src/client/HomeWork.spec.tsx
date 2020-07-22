@@ -7,7 +7,7 @@ import HomeWork from "./HomeWork";
 
 afterEach(cleanup);
 afterEach(jest.clearAllMocks);
-afterEach(fetchMock.restore);
+afterEach(() => fetchMock.restore());
 
 describe("HomeWork", () => {
     it("サーバーから取得したメッセージが表示されること", async () => {

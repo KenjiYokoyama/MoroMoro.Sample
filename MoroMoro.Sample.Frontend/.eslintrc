@@ -31,7 +31,7 @@
         ],
         "max-lines": [
             "warn",
-            300
+            500
         ],
         "max-statements": [
             "warn",
@@ -175,6 +175,13 @@
         "use-isnan": "error",
         "new-parens": "error",
         "constructor-super": "off", // It is not needed, because VSCode already has the checker.
+        "no-constant-condition": "off",
+        "no-empty": [
+            "error",
+            {
+                "allowEmptyCatch": true
+            }
+        ],
         "no-fallthrough": "error",
         "no-iterator": "error",
         "no-new-wrappers": "error",
