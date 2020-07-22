@@ -19,7 +19,7 @@ const config: webpack.Configuration = {
     resolve: {
         extensions: [".js", ".ts", ".tsx", ".styl"],
         modules: [
-            path.resolve(__dirname, "src/client"),
+            path.resolve(__dirname, "src"),
             path.resolve(__dirname, "node_modules"),
             "node_modules"
         ],
