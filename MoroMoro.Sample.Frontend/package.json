@@ -10,7 +10,7 @@
         "run": "       export NODE_ENV=production  && npm run build     && npm start",
         "run:dev": "   export NODE_ENV=development && npm run build:dev && npm run start:dev",
         "run:hmr": "   export NODE_ENV=development && export HMR=true   && concurrently \"npm run start:dev\" \"webpack-dev-server --config ./webpack.config.hmr.ts\"",
-        "test": "      export NODE_ENV=development && jest --coverage"
+        "test": "      export NODE_ENV=test        && jest --coverage"
     },
     "author": "Kenji Yokoyama",
     "license": "UNLICENSED",
